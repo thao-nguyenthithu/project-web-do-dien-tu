@@ -1,0 +1,246 @@
+/* ===Top Infor=== */
+
+.infor-item__top{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr; /* Chia không gian thành hai cột bằng nhau */
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding-bottom: 20px;
+}
+
+.infor-item__left-column{
+    padding: 10px 20px;
+}
+
+.list_inline-left-column--item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+
+.btn__selling{
+    border: 1px solid ;
+    background-color: #10b163;
+    color: var(--white-color);
+    padding:  5px 10px;
+    border-radius: 25px;
+    margin-left: 20px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.list_inline-left-column--item>li>i{
+    color: var(--bg-color__sale);
+}
+
+
+/* TOP - RIGHT */
+.infor-item__right-column{
+    padding-right: 20px;
+}
+.infor-item__ch, .infor-item__color{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infor-item__ch--container{
+    flex: 1;
+    margin: 0 10px; /* Khoảng cách giữa các khối */
+    padding: 10px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.infor-item__ch--container.selected {
+    border-color: var(--bg-color);
+}
+
+
+.infor-item__color{
+    margin: 20px 10px;
+    font-size: 16px;
+}
+
+
+.infor-item__color input[type="radio"] {
+    appearance: none; /* Remove default radio button */
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.infor-item__color input[type="radio"]:checked {
+    background-color: var(--bg-color); 
+    border: var(--bg-color);
+}
+
+
+/* Khuyến mãi */
+.infor-item__khuyenmaiT{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding:  10px;
+}
+
+.infor-item__khuyenmaiT--top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.infor-item__khuyenmaiT--main{
+    padding-top: 10px;
+}
+
+.infor-item__khuyenmaiT--main>i{
+    color: var(--bg-color__sale);
+}
+
+/* Thanh toán */
+
+.infor-item__btnT--mua, .infor-item__btnT--thanhtoan{
+    margin: 10px 0;
+    background-color: #e90628 ;
+    color: var(--white-color);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.infor-item__btnT--mua span, .infor-item__btnT--thanhtoan span{
+    display: block;
+    font-size: 14px;
+}
+
+.infor-item__btnT--tt-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adds space between the buttons */
+}
+
+.infor-item__btnT--tt-container>a{
+    width: 100%;
+}
+
+.infor-item__btnT--thanhtoan{
+    margin-top: auto;
+    background-color: var(--bg-color);
+}
+
+
+/* ===== CENTER ===== */
+
+.infor-item__center, .posts_itemT{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr; 
+    gap: 25px;
+}
+
+.infor-item__center--dacdiemT, .infor-item__center--thongsokt, .infor-item__center--thongso-posts, .infor-item__center--qs {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.infor-item__center--dacdiemT>img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.infor-item__center--thongsokt th, .infor-item__center--thongsokt td {
+    padding: 10px;
+    border: 0px;
+}
+
+.infor-item__center--thongsokt tr:nth-child(even){
+    /* Màu nền cho các dòng chẵn */
+    background-color: #ededed;
+}
+
+.infor-item__center--thongsokt td:first-child {
+    width: 40%; /* Độ rộng cho cột đầu tiên */
+    font-weight: bold;
+}
+
+/* Blog  */
+.posts_itemT{
+    margin: 20px 0px;
+}
+
+.posts_itemT>img{
+    display: 1;
+    width: 100%;
+}
+
+.posts_itemT--title{
+    color: var(--text-color);
+    font-size: 13px;
+
+}
+
+.posts_itemT--title:hover{
+    color: var(--bg-color);
+}
+
+.infor-item__center--dacdiemT{
+    font-size: 16px
+}
+
+.infor-item__center--dacdiemT ul{
+    list-style: disc ;
+}
+
+.infor-item__dacdiemT--banggia{
+    font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infor-item__dacdiemT--banggia td{
+    padding: 10px;
+    text-align: center;
+}
+
+/* Câu hỏi  */
+ 
+.inf-qs input, textarea {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.inf-qs--gui{
+    margin-top: 15px;
+    background-color: var(--bg-color) ;
+    color: var(--white-color);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16x;
+    cursor: pointer;
+}
+
+.inf-qs input:focus, .inf-qs textarea:focus {
+    box-shadow: 0 0 5px rgba(28, 118, 214, 0.958);
+    outline: none; /* Bỏ viền mặc định khi focus */
+}

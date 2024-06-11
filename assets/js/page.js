@@ -11,6 +11,9 @@ function loadPage(page) {
         case 'contact':
             content = getContactPage();
             break;
+        case 'product':
+            content = getProductDetails();
+            break;
         default:
             content = getHomePage();
             break;
