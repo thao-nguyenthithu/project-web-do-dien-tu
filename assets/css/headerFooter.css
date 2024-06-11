@@ -1,0 +1,137 @@
+/* ===== Header ===== */
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.header{
+    width: 100%;
+    height: 115px;
+    top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng phía bên dưới */
+    position: fixed; /* Cố định header */
+    background-color: var(--white-color); /* Đảm bảo nền trắng để che nội dung phía sau */
+    z-index: 1000; /* Đảm bảo header ở trên cùng */
+}
+
+.header__title{
+    background-color: var(--bg-color);
+    padding: 1em;
+}
+
+.header__title--container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__title--search{
+    height: 34px;
+    width: 345px ;
+    background-color: var(--white-color);
+    border-radius: 25px;
+    float: left;
+    padding: 8px;
+}
+
+i{
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+.header__title--searchtxt{
+    border: 0px;
+}
+
+.header__title--phone{
+    background-color: rgba(41, 69, 223, 0.477);
+    align-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.header__title--items{
+    align-items: center;
+    line-height: 18px;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.header__title--items>i{
+    font-size: 25px;
+}
+
+/* <!-- Menu Header --> */
+
+.menu__box{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    position: relative; /* Đảm bảo submenu được định vị đúng */
+}
+
+.menu__box--item>a, .menu__box-title>i {
+    color: var(--black-color);
+}
+
+ul{
+    list-style: none;
+}
+
+.menu__box--sub{
+    display: none;
+    opacity: 0; /* Bắt đầu với độ mờ */
+    transform: translateY(20px); /* Di chuyển xuống 20px */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi cho độ mờ và vị trí */
+    position: absolute;
+    top: 100%; /* Đặt submenu ngay dưới phần tử cha */
+    left: 0;
+    background-color: var(--white-color); /* Điều chỉnh màu nền nếu cần */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tùy chọn: Thêm bóng cho đẹp */
+    z-index: 1000; /* Đảm bảo submenu xuất hiện trên các phần tử khác */
+}
+
+.menu__sub--container{
+    margin-left: 10px;
+}
+
+/* Hiển thị submenu khi di chuột vào phần tử cha */
+.menu__box--item:hover .menu__box--sub {
+    display: block;
+    opacity: 1; /* Thay đổi độ mờ để hiển thị */
+    transform: translateY(0); /* Di chuyển về vị trí ban đầu */
+}
+
+
+.menu__hang-list li a:hover, .menu__gia-list li a:hover {
+    text-decoration: underline; /* Tùy chọn: Thêm gạch chân khi di chuột */
+}
+
+.menu__sub--container{
+    display: flex;
+}
+
+.menu__sub--container-hang{
+    width: 15%;
+}
+
+
+/* ===== Main ===== */
+
+#main-content{
+    background-color: #f0f0f0;
+    padding-bottom: 10px;
+    margin-top: 115px;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1em;
+}

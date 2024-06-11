@@ -1,0 +1,38 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000; 
+    --text-color: #333;
+    --bg-color: #4a90e2;
+    --bg-color__sale: #ffc803;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    /* tip */
+    font-size: 62.5%;
+    /* khi do neu the p co fontsize la 1.6rem <=> 16px */
+
+    /* dat do cao mac dinh do dong chu */
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
