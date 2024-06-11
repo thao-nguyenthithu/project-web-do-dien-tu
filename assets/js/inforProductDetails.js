@@ -1,4 +1,4 @@
-function getProductDetails(){
+function getProductDetailsPage(){
     return `
             <!-- INFOR PORDUCT DETAILS -->
             <div class="grid" style="padding: 10px;">

@@ -5,7 +5,7 @@ function getHomePage() {
                 <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/Banner-big---Desk-1920x450-1.jpg" alt="">
             </div>
             <!-- slide adv -->
-            <div class="gird">
+            <div class="grid">
                 <div class="slideshow-container">
                     <div class="mySlides slide">
                         <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/720-220-720x220-9-720x220-1.png" style="width:100%">
