@@ -106,7 +106,7 @@ function getAboutItemPage() {
                                 <div class="about-item__container">
                                     <div class="infor__container-ab-item">
                                         <div class="infor__container-ab-product">
-                                            <a href="#">
+                                            <a href="#" onclick="loadPage('product'); return false;">
                                                 <div class="ab-product__discount-tag">Giảm 13%</div>
                                                 <div class="ab-product__img">
                                                     <img src="assets/img/iphone15.jpeg" alt="iPhone 15 Pro 128GB">
