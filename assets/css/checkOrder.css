@@ -1,0 +1,31 @@
+.order-check-form{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+
+.order__form-title{
+    background-color: var(--white-color);
+    padding: 100px 70px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow)
+}
+
+.order__form-title input, .order__form-title div>button{
+    border-radius: 100px;
+    height: 48px;
+    width: 80%;
+    padding: 0 20px;
+    margin-top: 20px;
+    border: 1px solid #cfcece;
+}
+
+.order__form-title--button>button{
+    background-color: var(--bg-color) ;
+    font-size: 16px;
+    color: var(--white-color);
+}
+
