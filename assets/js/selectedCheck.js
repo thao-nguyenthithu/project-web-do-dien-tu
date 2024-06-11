@@ -1,12 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
+function selectedCheck() {
     const containers = document.querySelectorAll('.infor-item__ch--container');
 
     containers.forEach(container => {
         container.addEventListener('click', function() {
-            // Remove 'selected' class from all containers
+            // Xóa lớp 'selected' khỏi tất cả các container
             containers.forEach(c => c.classList.remove('selected'));
-            // Add 'selected' class to the clicked container
+            // Thêm lớp 'selected' vào container được nhấp vào
             this.classList.add('selected');
         });
     });
-});
+}
+
+
