@@ -8,11 +8,11 @@ function loadPage(page) {
         case 'ab-items':
             content = getAboutItemPage();
             break;
-        case 'contact':
-            content = getContactPage();
+        case 'check-order':
+            content = getCheckOrderPage();
             break;
         case 'product':
-            content = getProductDetails();
+            content = getProductDetailsPage();
             break;
         default:
             content = getHomePage();

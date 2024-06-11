@@ -52,6 +52,10 @@ i{
     cursor: pointer;
 }
 
+.header__title--phone:hover{
+    box-shadow: var(--box-shadow);
+}
+
 .header__title--items{
     align-items: center;
     line-height: 18px;
@@ -63,6 +67,9 @@ i{
     font-size: 25px;
 }
 
+.header__title--items:hover i, .header__title--items:hover span{
+    color: rgba(41, 69, 223, 0.477) ;
+}
 /* <!-- Menu Header --> */
 
 .menu__box{
@@ -75,6 +82,12 @@ i{
 
 .menu__box--item>a, .menu__box-title>i {
     color: var(--black-color);
+}
+
+.menu__box-title:hover, .menu__box-title:hover i,
+.menu__box--item:hover .menu__box-title, .menu__box--item:hover .menu__box-title i {
+    color: var(--bg-color);
+    font-weight: bolder;
 }
 
 ul{
