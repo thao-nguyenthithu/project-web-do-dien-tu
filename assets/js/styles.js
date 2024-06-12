@@ -44,6 +44,7 @@ function initSilde(){
 }
 
 
+
 function createCarousel(listImageSelector, interval = 4000) {
     const listImage = document.querySelector(listImageSelector);
     // const listImage = container.querySelector('.list-images');
