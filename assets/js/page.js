@@ -11,6 +11,9 @@ function loadPage(page) {
         case 'contact':
             content = getContactPage();
             break;
+        case 'gioHang':
+            content = getGioHangPage();
+            break;
         default:
             content = getHomePage();
             break;
