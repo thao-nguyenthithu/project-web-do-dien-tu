@@ -1,0 +1,88 @@
+.giohang{
+}
+
+.giohang__container{
+    padding: 20px 18%;
+}
+
+.giohang__container-txt{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.giohang__container-item{
+    width: 100%;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 9fr; 
+    padding: 10px; 
+    margin: 20px 10px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.gh-item__img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+}
+
+.gh-item__img>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gh-item__img input[type="checkbox"] {
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    width: 22px; 
+    height: 22px;
+    accent-color: var(--bg-color) ; /* Màu khi checkbox được tích */
+    cursor: pointer;
+}
+
+.fech{
+    font-size: 16px;
+}
+
+.gh-item__title--name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.fa-trash-can {
+    cursor: pointer;
+    color: #ab2626;
+}
+
+.gh-item__title--gia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.gh-item__title--color {
+    display: flex;
+    align-items: center;
+}
+
+.gh-item__title--color label {
+    margin-right: 8px;
+}
+
+.gh-item__title--color select {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+
