@@ -44,6 +44,7 @@ function initSilde(){
 }
 
 
+
 function createCarousel(listImageSelector, interval = 4000) {
     const listImage = document.querySelector(listImageSelector);
     // const listImage = container.querySelector('.list-images');
@@ -199,3 +200,4 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+

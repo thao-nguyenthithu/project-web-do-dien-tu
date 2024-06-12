@@ -4,10 +4,12 @@
     --text-color: #333;
     --bg-color: #4a90e2;
     --bg-color__sale: #ffc803;
+    --box-shadow: 0 0 16px rgba(0, 0, 0, .11) /* Đổ bóng */
 }
 
 *{
     box-sizing: inherit;
+    font-family: inherit;
 }
 
 html{
