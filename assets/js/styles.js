@@ -42,5 +42,3 @@ function initSilde(){
     document.querySelector('.about-slider').addEventListener('mouseout', startAutoSlide);
 
 }
-
-
