@@ -116,6 +116,7 @@ ul{
     display: block;
     opacity: 1; /* Thay đổi độ mờ để hiển thị */
     transform: translateY(0); /* Di chuyển về vị trí ban đầu */
+    border-radius: 10px;
 }
 
 
@@ -125,6 +126,7 @@ ul{
 
 .menu__sub--container{
     display: flex;
+    padding-bottom: 20px;
 }
 
 .menu__sub--container-hang{

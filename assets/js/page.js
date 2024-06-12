@@ -14,6 +14,9 @@ function loadPage(page) {
         case 'product':
             content = getProductDetailsPage();
             break;
+        case 'gioHang':
+            content = getGioHangPage();
+            break;
         default:
             content = getHomePage();
             break;
