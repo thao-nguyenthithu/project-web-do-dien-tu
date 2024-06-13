@@ -27,12 +27,8 @@
 .chance {
     display: flex;
     align-items: center;
-    /* background-color: #f1f1f1; */
     border-radius: 20px;
     padding: 10px;
-    /* max-width: 200px; */
-    /* margin: 50px auto; */
-    /* justify-content: space-between; */
 }
 
 .soluong {
@@ -200,7 +196,6 @@ small {
 }
 
 .txt-menthod {
-    /* margin: 10px 0; */
     color: #000000;
     margin-right: 40px;
     border: 1px solid gray;

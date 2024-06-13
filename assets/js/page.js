@@ -8,8 +8,8 @@ function loadPage(page) {
         case 'ab-items':
             content = getAboutItemPage();
             break;
-        case 'contact':
-            content = getContactPage();
+        case 'order':
+            content = getCheckOrderPage();
             break;
         case 'gioHang':
             content = getGioHangPage();
@@ -20,6 +20,9 @@ function loadPage(page) {
         case 'login':
             content = getLoginPage();
             break;
+        case 'product':
+            content = getProductDetailsPage();
+            break;
         default:
             content = getHomePage();
             break;
@@ -27,11 +30,14 @@ function loadPage(page) {
 
     document.getElementById('main-content').innerHTML = content;
     if (page === 'ab-items') {
-        initSilde(); // Gắn lại sự kiện slide sau khi tải trang about-items
+        initSilde(); // Gắn lại sự kiện initSilde() sau khi tải trang about-items
+    }
+    if(page == 'product'){
+        selectedCheck();
     }
 }
 
-// Load the home page content by default
+
 document.addEventListener('DOMContentLoaded', () => {
     loadPage('home');
 });

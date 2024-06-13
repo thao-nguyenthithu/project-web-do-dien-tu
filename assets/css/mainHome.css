@@ -5,6 +5,7 @@
 
 
 /* Slideshow container */
+
 .slideshow-container {
     position: relative;
     max-width: 1000px;
@@ -29,7 +30,6 @@
     to { transform: translateX(0); }
 }
 
-/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -55,12 +55,11 @@
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Dots/bullets/indicators */
 .dot {
     height: 15px;
     width: 15px;
@@ -75,19 +74,19 @@
     background-color: #717171;
 }
 
-/* Hide the buttons initially */
+
 .slideshow-container .prev, .slideshow-container .next {
     display: none;
 }
 
-/* Show the buttons on hover */
+
 .slideshow-container:hover .prev,
 .slideshow-container:hover .next {
     display: block;
 }
 
 
-/* Ngân */
+/* Ngn */
 
 .container>.row1 img{
     width: 1280px;
@@ -137,7 +136,7 @@
     border: 1px solid gainsboro;
     border-radius: 10px;
     margin: 0 10px;
-    /* background-color: #5cc1ed; */
+    box-shadow: var(--box-shadow);
 }
 
 .img-boxcate img {
@@ -146,7 +145,7 @@
     margin-bottom: 10px;
     margin: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease; /* Thời gian và kiểu hiệu ứng chuyển đổi */
+    transition: transform 0.3s ease; 
 }
 
 .img-boxcate img:hover {
@@ -217,10 +216,6 @@
     right: 0px;
 }
 
-/* .btn-left:hover, .btn-right:hover {
-    background-color: rgba(26, 30, 97, 0.6);
-
-} */
 
 .col3 img, .col5 img, .col img {
     margin-bottom: 20px;
@@ -303,7 +298,6 @@
 .list-product {
     display: flex;
     flex-wrap: wrap;
- /* Khoảng cách giữa các sản phẩm */
 }
 
 .fa-bolt{
@@ -313,7 +307,6 @@
     margin-right: 10px;
 }
 
-/* Keyframes để tạo hiệu ứng nhấp nháy */
 @keyframes blink {
     0%, 100% {
         opacity: 1;

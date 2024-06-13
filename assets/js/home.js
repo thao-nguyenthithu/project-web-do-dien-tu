@@ -1,9 +1,6 @@
 function getHomePage() {
     return `
         <!-- Home Main -->
-            <div class="home__top">
-                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/Banner-big---Desk-1920x450-1.jpg" alt="">
-            </div>
             <div class="grid">
                 <div id="main" class="active">
                     <div class="container">
@@ -30,7 +27,7 @@ function getHomePage() {
                 <div class="row row2">
                     <h2>Danh mục nổi bật</h2>
                     <section class="img-boxcate">
-                        <a href="javascript:void(0)" class="item-menu" onclick="switchPhone('main', 'main1')">
+                        <a href="javascript:void(0)" class="item-menu" onclick="loadPage('ab-items'); return false;">
                             <article>
                                 <img src="assets/img/fs9.jpg" alt="Điện thoại" class="boxcate-pink">
                                 <div class="overlay"></div>

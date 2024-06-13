@@ -1,10 +1,10 @@
 function showLoginModal() {
-    closeModal('registerModal'); // Đảm bảo rằng modal đăng ký đã được đóng
+    closeModal('registerModal'); 
     document.getElementById('loginModal').style.display = 'flex';
 }
 
 function showRegisterModal() {
-    closeModal('loginModal'); // Đảm bảo rằng modal đăng nhập đã được đóng
+    closeModal('loginModal'); 
     document.getElementById('registerModal').style.display = 'flex';
 }
 
