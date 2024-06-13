@@ -1,7 +1,8 @@
 #wrap-payment {
     background-color: #fff;
-    width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .wrap-payment-container {
@@ -9,14 +10,13 @@
 }
 
 .payment-img img{
-    /* flex: 1; */
-    width: 130px;
+    width: 200px;
     padding: 10px;
 }
 
 .payment-information-sl {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .payment-information-sl h2 {
@@ -94,11 +94,12 @@ label {
 .text_color {
     font-size: 1.6rem;
 }
-select {
+.color-selec_N {
     padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
 }
-select option {
+.color-selec_N option {
     color: #2196F3;
 }
 
@@ -234,5 +235,6 @@ small {
     border-radius: 15px;
     margin: 20px 0;
     margin-left: 770px;
+    cursor: pointer;
     
 }

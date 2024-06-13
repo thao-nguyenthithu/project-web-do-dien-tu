@@ -14,6 +14,12 @@ function loadPage(page) {
         case 'gioHang':
             content = getGioHangPage();
             break;
+        case 'pay':
+            content = getPayMentPage();
+            break;
+        case 'login':
+            content = getLoginPage();
+            break;
         default:
             content = getHomePage();
             break;
