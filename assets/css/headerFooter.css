@@ -8,15 +8,25 @@ a{
     width: 100%;
     height: 115px;
     top: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng phía bên dưới */
-    position: fixed; /* Cố định header */
-    background-color: var(--white-color); /* Đảm bảo nền trắng để che nội dung phía sau */
-    z-index: 1000; /* Đảm bảo header ở trên cùng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    background-color: var(--white-color); 
+    z-index: 1000; 
 }
 
 .header__title{
     background-color: var(--bg-color);
     padding: 1em;
+}
+
+.logo{
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo:hover{
+    transform: scale(1.2); /* Phóng to hình ảnh lên 1.2 lần */
 }
 
 .header__title--container{
@@ -25,14 +35,29 @@ a{
     align-items: center;
 }
 
-.header__title--search{
+.header__title--search {
+    display: flex;
     height: 34px;
     width: 345px ;
-    background-color: var(--white-color);
-    border-radius: 25px;
-    float: left;
-    padding: 8px;
+    position: relative;
 }
+
+.header__title--icon {
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    font-size: 18px;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.header__title--searchtxt {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
 
 i{
     color: var(--white-color);
@@ -63,6 +88,14 @@ i{
     font-size: 25px;
 }
 
+.header__title--items:hover i, .header__title--items:hover span{
+    color: var(--hover-color) ;
+}
+
+.menu__sub--container-hang p, .menu__sub--container-gia p{
+    font-weight: bold;
+    font-size: 15px;
+}
 /* <!-- Menu Header --> */
 
 .menu__box{
@@ -70,11 +103,17 @@ i{
     display: flex;
     justify-content: space-around;
     padding: 0px;
-    position: relative; /* Đảm bảo submenu được định vị đúng */
+    position: relative; 
 }
 
 .menu__box--item>a, .menu__box-title>i {
     color: var(--black-color);
+}
+
+.menu__box-title:hover, .menu__box-title:hover i,
+.menu__box--item:hover .menu__box-title, .menu__box--item:hover .menu__box-title i {
+    color: var(--hover-color);
+    font-weight: bolder;
 }
 
 ul{
@@ -83,32 +122,32 @@ ul{
 
 .menu__box--sub{
     display: none;
-    opacity: 0; /* Bắt đầu với độ mờ */
-    transform: translateY(20px); /* Di chuyển xuống 20px */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi cho độ mờ và vị trí */
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease; 
     position: absolute;
-    top: 100%; /* Đặt submenu ngay dưới phần tử cha */
+    top: 100%; 
     left: 0;
-    background-color: var(--white-color); /* Điều chỉnh màu nền nếu cần */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tùy chọn: Thêm bóng cho đẹp */
-    z-index: 1000; /* Đảm bảo submenu xuất hiện trên các phần tử khác */
+    background-color: var(--white-color); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
 }
 
 .menu__sub--container{
     margin-left: 10px;
 }
 
-/* Hiển thị submenu khi di chuột vào phần tử cha */
+
 .menu__box--item:hover .menu__box--sub {
     display: block;
-    opacity: 1; /* Thay đổi độ mờ để hiển thị */
-    transform: translateY(0); /* Di chuyển về vị trí ban đầu */
+    opacity: 1; 
+    transform: translateY(0); 
     border-radius: 10px;
 }
 
 
 .menu__hang-list li a:hover, .menu__gia-list li a:hover {
-    text-decoration: underline; /* Tùy chọn: Thêm gạch chân khi di chuột */
+    color: var(--bg-color);
 }
 
 .menu__sub--container{
