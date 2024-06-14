@@ -26,7 +26,7 @@ function initSilde(){
     function startAutoSlide() {
         slideInterval = setInterval(() => {
             moveSlide(1);
-        }, 3000); // Change slide every 3 seconds
+        }, 3000); 
     }
 
     function stopAutoSlide() {
@@ -47,7 +47,6 @@ function initSilde(){
 
 function createCarousel(listImageSelector, interval = 4000) {
     const listImage = document.querySelector(listImageSelector);
-    // const listImage = container.querySelector('.list-images');
     const imgs = listImage.querySelectorAll('img');
     let currentIndex = 0;
 
@@ -88,7 +87,7 @@ function createCarouselRow3(containerSelector, visibleItems = 6, interval = 6000
     const listImage = container.querySelector('.list-images');
     const imgs = listImage.querySelectorAll('.col3');
     let currentIndex = 0;
-    const imgWidth = imgs[0].offsetWidth + 20; // width of each image including margin
+    const imgWidth = imgs[0].offsetWidth + 20; 
 
     function updateCarousel() {
         listImage.style.transform = `translateX(${-imgWidth * currentIndex}px)`;
@@ -130,7 +129,7 @@ function createCarouselRow4(containerSelector, interval = 4000) {
     let currentIndex = 0;
 
     function updateCarousel() {
-        let width = imgs[0].offsetWidth + 20; // Lấy chiều rộng của hình ảnh đầu tiên
+        let width = imgs[0].offsetWidth + 20; 
         listImage.style.transform = `translateX(${-width * currentIndex}px)`;
     }
 
@@ -139,8 +138,8 @@ function createCarouselRow4(containerSelector, interval = 4000) {
         updateCarousel();
     }, interval);
 
-    const btnLeft = container.querySelector('.btn-left'); // Sử dụng container để tìm nút trái
-    const btnRight = container.querySelector('.btn-right'); // Sử dụng container để tìm nút phải
+    const btnLeft = container.querySelector('.btn-left'); 
+    const btnRight = container.querySelector('.btn-right'); 
 
     btnLeft.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + imgs.length) % imgs.length;
@@ -190,7 +189,6 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -200,4 +198,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-

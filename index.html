@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./assets/css/mainHome.css">
     <link rel="stylesheet" href="./assets/css/headerFooter.css">
     <link rel="stylesheet" href="./assets/css/mainAbouItems.css">
-    <link rel="stylesheet" href="./assets/css/inforItem.css">
+    <link rel="stylesheet" href="./assets/css/inforItema.css">
     <link rel="stylesheet" href="./assets/css/checkOrder.css">
     <link rel="stylesheet" href="./assets/css/gioHang.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/payment.css">
     <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
                     <nav class="header__title--container">
                         <a href="" onclick="loadPage('home')" ><img src="assets/img/logo.png" alt="" class="logo"></a>
                         <div class="header__title--search">
-                            <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+                            <i class="fa-solid fa-magnifying-glass header__title--icon"></i>
                             <input type="text" placeholder="Bạn cần tìm sản phẩm nào" class="header__title--searchtxt">
                         </div>
                         <div class="header__title--phone">
@@ -33,7 +35,7 @@
                             <i class="fa-regular fa-newspaper"></i>
                             <span>Tin tức</span>
                         </a>
-                        <a href="" class="header__title--items">
+                        <a href="" class="header__title--items" onclick="loadPage('order'); return false;">
                             <i class="fa-solid fa-truck-fast"></i>
                             <span>Tra cứu đơn hàng</span>
                         </a>
@@ -41,8 +43,8 @@
                             <i class="fa-solid fa-cart-plus"></i>
                             <span>Giỏ hàng</span>
                         </a>
-                        <a href="" class="header__title--items login">
-                            <i class="fa-solid fa-user"></i>
+                        <a href="" class="header__title--items login" onclick="showLoginModal(); return false;">
+                            <i class="fa-solid fa-circle-user"></i>
                             <span>Đăng nhập</span>
                         </a>
                     </nav>
@@ -87,16 +89,39 @@
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-solid fa-laptop"></i>
                                 Laptop
                             </a>
                             <div class="menu__box--sub">
-
+                                <div class="grid">
+                                    <div class="menu__sub--container">
+                                        <div class="menu__sub--container-hang">
+                                            <p>Chọn theo hãng</p>
+                                            <ul class="menu__hang-list">
+                                                <li><a href="">Dell</a></li>
+                                                <li><a href="">Mac</a></li>
+                                                <li><a href="">HP</a></li>
+                                                <li><a href="">Acer</a></li>
+                                                <li><a href="">Lenovo</a></li>
+                                                <li><a href="">LG</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__sub--container-gia">
+                                            <p>Chọn theo mức giá</p>
+                                            <ul class="menu__gia-list">
+                                                <li><a href="">Dưới 10 triệu</a></li>
+                                                <li><a href="">Từ 10 - 15 triệu</a></li>
+                                                <li><a href="">Từ 15 - 20 triệu</a></li>
+                                                <li><a href="">Trên 20 triệu</a></li>
+                                            </ul>
+                                        </div>                                        
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-solid fa-tablet-button"></i>
                                 Máy tính bảng
                             </a>
                             <div class="menu__box--sub">
@@ -105,7 +130,7 @@
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-regular fa-clock"></i>
                                 Đồng hồ thông minh
                             </a>
                             <div class="menu__box--sub">
@@ -114,7 +139,7 @@
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-regular fa-keyboard"></i>
                                 Phụ kiện
                             </a>
                             <div class="menu__box--sub">
@@ -123,7 +148,7 @@
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-solid fa-satellite-dish"></i>
                                 Điện máy- Gia dụng
                             </a>
                             <div class="menu__box--sub">
@@ -132,7 +157,7 @@
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-solid fa-tv"></i>
                                 Tivi
                             </a>
                             <div class="menu__box--sub">
@@ -141,7 +166,7 @@
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-solid fa-rotate-right"></i>
                                 Mua kèm gói cước
                             </a>
                             <div class="menu__box--sub">
@@ -150,7 +175,7 @@
                         </li>
                         <li class="menu__box--item">
                             <a href="" class="menu__box-title">
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <i class="fa-solid fa-sim-card"></i>
                                 Sim số - Dịch vụ
                             </a>
                             <div class="menu__box--sub">
@@ -161,7 +186,7 @@
             </div>
         </header>
         <!-- MAIN -->
-        <main id="main-content">
+        <main id="main-content" >
             
 
         </main>
@@ -170,14 +195,79 @@
             <p>&copy; 2024 Website by Do Thi Ngan and Nguyen Thi Thu Thao</p>
         </footer>
     
+
+        <!-- Modal đăng nhập -->
+        <div id="loginModal" class="modalT">
+            <div class="modal__overlayT" onclick="closeModal('loginModal')"></div>
+            <div class="modal__bodyT">
+                <button class="btn-closeT" onclick="closeModal('loginModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h2 class="modal__headerT">Đăng nhập</h2>
+                <div class="modal__formT">
+                    <div class="modal__groupT">
+                        <i class="fa-solid fa-phone iconT"></i>
+                        <input type="text" class="modal__inputT" placeholder="Số điện thoại">
+                    </div>
+                    <div class="modal__groupT">
+                        <i class="fas fa-lock iconT"></i>
+                        <input type="password" class="modal__inputT" placeholder="Mật khẩu">
+                    </div>
+                    <div class="modal__helpT">
+                        <a href="#" class="modal__linkT">Quên mật khẩu</a>
+                    </div>
+                    <button type="submit" class="modal__buttonT">Đăng nhập</button>
+                    <div class="modal__footerT">
+                        <a href="#" class="modal__linkT" onclick="showRegisterModal(); return false;">Đăng kí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Modal đăng ký -->
+         <div id="registerModal" class="modalT">
+            <div class="modal__overlayT" onclick="closeModal('registerModal')"></div>
+            <div class="modal__bodyT">
+                <button class="btn-closeT" onclick="closeModal('registerModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h2 class="modal__headerT">Đăng ký</h2>
+                <div class="modal__formT">
+                    <div class="modal__groupT">
+                        <i class="fas fa-user iconT"></i>
+                        <input type="text" class="modal__inputT" placeholder="Họ và tên">
+                    </div>
+                    <div class="modal__groupT">
+                        <i class="fa-solid fa-phone iconT"></i>
+                        <input type="text" class="modal__inputT" placeholder="Số điện thoại">
+                    </div>
+                    <div class="modal__groupT">
+                        <i class="fas fa-lock iconT"></i>
+                        <input type="password" class="modal__inputT" placeholder="Mật khẩu">
+                    </div>
+                    <div class="modal__groupT">
+                        <i class="fas fa-lock iconT" style="color: var(--text-color);"></i>
+                        <input type="password" class="modal__inputT" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <button type="submit" class="modal__buttonT">Đăng ký</button>
+                    <div class="modal__footerT">
+                        <a href="#" class="modal__linkT" onclick="showLoginModal(); return false;">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="assets/js/page.js"></script>
         <script src="assets/js/home.js"></script>
         <script src="assets/js/styles.js"></script>
         <script src="assets/js/aboutItems.js"></script>
-        <script src="assets/js/selectedCheck.js"></script>
+        <script src="assets/js/checkSelected.js"></script>
         <script src="assets/js/inforProductDetails.js"></script>
-        <script src="assets/js/checkOrder.js"></script>
+        <script src="assets/js/checkOrderPage.js"></script>
         <script src="assets/js/gioHangPage.js"></script>
+        <script src="assets/js/payMentPage.js"></script>
+        <script src="assets/js/payment.js"></script>
+        <script src="assets/js/login.js"></script>
     </div>
 </body>
 </html>

@@ -12,7 +12,7 @@ function getGioHangPage(){
                         <div class="gh-item__title">
                             <div class="gh-item__title--name">
                                 <span class="giohang__container-txt fech">iPhone 15 Pro Max 256GB Titan MU7A3VN/A</span>
-                                <i class="fa-solid fa-trash-can"></i>
+                                <i class="fa-solid fa-trash-can" class="delete-btn"></i>
                             </div>
                             <div class="gh-item__title--gia">
                                 <div class="gh-item__title--color">

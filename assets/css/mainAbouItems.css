@@ -12,7 +12,7 @@
     transition: transform 0.5s ease-in-out;
 }
 .ab-slide__adv {
-    flex: 0 0 50%; /* mỗi slide sẽ chiếm 50% width */
+    flex: 0 0 50%; 
     padding: 5px;
 }
 .ab-slide__adv img {
@@ -115,12 +115,12 @@
     overflow: hidden;
     margin: 10px;
     max-width: calc(20% - 20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
-    transition: box-shadow 0.3s ease-in-out; /* Chuyển đổi mượt mà khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease-in-out; 
 }
 
 .infor__container-ab-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .infor__container-ab-product {
@@ -138,11 +138,11 @@
     margin-top: 10px;
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out; /* Chuyển đổi mượt mà khi hover */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .infor__container-ab-item:hover .ab-product__img img {
-    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    transform: scale(1.1); 
 }
 
 .ab-product__discount-tag {
